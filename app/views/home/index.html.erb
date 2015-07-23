@@ -1,0 +1,33 @@
+<% if user_signed_in? %>
+<% else %>
+<div id="instaclone" class="jumbotron">
+<br>
+<h1 class="page-title center">Instaclone</h1>
+<h3><center><strong>Share Your Favorite Pictures with Others</strong></center></h3>
+<div class="span7 text-center">
+  <br>
+    <p>
+      <%= link_to "Sign up", new_user_registration_path, class: "btn btn-default btn-lg" %>
+    </p>
+  <br>
+  <br>
+  <br>
+</div>
+</div>
+
+  <div class="row">
+  <div class="col-md-4">
+  <center><h1><strong>1. Capture</strong></h3></center>
+  <center><h3 class="featurette-heading"><span class="text-muted">Capture your best moments</span></h3></center>
+  </div>
+  <div class="col-md-4">
+  <center><h1><strong>2. Upload</strong></h3></center>
+  <center><h3 class="featurette-heading"><span class="text-muted">Easily upload to Instaclone</span></h3></center>
+  </div>
+  <div class="col-md-4">
+  <center><h1><strong>3. Share</strong></h3></center>
+  <center><h3 class="featurette-heading"><span class="text-muted">Share with loved ones</span></h3></center>
+  </div>
+</div>
+</div>
+<% end %>
